@@ -62,7 +62,8 @@ history_aware_retriever = create_history_aware_retriever(
 # This system prompt helps the AI understand that it should provide concise answers
 # based on the retrieved context and indicates what to do if the answer is unknown
 qa_system_prompt = (
-    "You are an assistant for question-answering tasks. Use "
+    "You are an assistant for question-answering tasks. The "
+    "questions have 5 choices and one or more correct answers. Use "
     "the following pieces of retrieved context to answer the "
     "question. If you don't know the answer, just say that you "
     "don't know. Use three sentences maximum and keep the answer "
